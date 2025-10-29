@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook-P6-TM03B</title>
+    <title>Playbook: Sesión 10 - 6to Primaria</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -11,7 +11,7 @@
 <body>
 
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 3B 6to Primaria</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Sesión 10 - 6to Primaria</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
                 <span id="timer">⏱️ 00:00</span>
@@ -64,18 +64,31 @@
                                 <td>
                                     <strong>Objetivos de Aprendizaje</strong>
                                     <ul>
-                                        <li>Que los estudiantes implementen y prueben las secuencias de control postural en el robot XGO. Que observen y verifiquen empíricamente la función de auto-estabilización del robot y comprendan el valor de los sistemas de control de "caja negra" que simplifican tareas complejas.</li>
+                                        <li>Al final de la sesión, los estudiantes podrán:
+                                            <ul>
+                                                <li>Programar posturas y movimientos que desafíen el equilibrio.</li>
+                                                <li>Realizar pruebas para observar cómo el robot reacciona.</li>
+                                                <li>Aprender a depurar comandos para asegurar la estabilidad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Objetivo General de la Sesión:</strong> Que los estudiantes implementen y prueben comandos de postura avanzada.</li>
+                                    </ul>
+                                     <h4>Vocabulario Clave:</h4>
+                                    <ul>
+                                      <li><b>Auto-Estabilización:</b> La capacidad del robot para mantenerse en equilibrio por sí mismo.</li>
+                                      <li><b>Límites Físicos:</b> Las restricciones de movimiento del robot para no caerse o dañarse.</li>
+                                      <li><b>Debugging Físico:</b> Encontrar y corregir errores que no están en el código, sino en cómo interactúa el robot con el mundo real.</li>
                                     </ul>
                                     <strong>Secuencia de Clase</strong>
                                     <ul>
                                         <li>⚡Bienvenida y Conexión</li>
                                         <li>⚡IMPLEMENTACIÓN DEL CÓDIGO (Ejecución)</li>
-                                        <li>⚡PRUEBAS, OBSERVACIÓN Y DEBUGGING COLABORATIVO</li>
+                                        <li>⚡PRUEBAS, OBSERVACIÓN Y DEBUGGING FÍSICO</li>
                                         <li>⚡GNIUS STORM Y REINICIO DEL CICLO</li>
                                     </ul>
                                     <strong>Entregable Clave</strong>
                                     <ul>
-                                        <li>Robot XGO ejecutando una "coreografía" depurada y/o demostrando la función de auto-estabilización.</li>
+                                        <li>Robot XGO demostrando la función de <strong>auto-estabilización</strong> y ejecutando una secuencia de control postural.</li>
                                     </ul>
                                 </td>
                                 <td>
@@ -85,7 +98,7 @@
                                         <li>Conexión a internet estable.</li>
                                         <li>Acceso al entorno de programación Python en las computadoras.</li>
                                         <li>Robots XGO V2 (1 por cada 4 estudiantes), cargados y listos para conectar.</li>
-                                        <li>Los "Playlist de Baile" creados por cada equipo en la Sesión 3A.</li>
+                                        <li>Los "Planes de Control Postural" creados por cada equipo en la sesión pasada.</li>
                                         <li>Tabla o superficie plana y rígida para la prueba de estabilización.</li>
                                         <li>Presentación de diapositivas.</li>
                                         <li>Chat de Agente Gnius (Xolo) activo para consultas de debugging.</li>
@@ -115,13 +128,13 @@
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Bienvenida y Conexión con Sesión A ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 2) Da la bienvenida, recuérdales el trabajo de diseño de la Sesión A y crea expectación.</p>
+                            <h3>Paso 1: Bienvenida y Conexión con la sesión pasada ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) Da la bienvenida, recuérdales el trabajo de diseño de la sesión pasada y crea expectación.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Hola de nuevo, coreógrafos! ¡Bienvenidos a la Sesión B! En la sesión pasada diseñaron unas 'Playlist de Baile' increíbles. Hoy es el día de dar vida a esas coreografías y ver la magia del equilibrio en acción. ¿Listos para el show?</p>
+                                <p class="dialogue assistant">¡Hola de nuevo, ingenieros de control! En la sesión pasada diseñaron sus <strong>'Planes de Control Postural'</strong>. Hoy es el día de ejecutar esos planes y ver la magia del <strong>equilibrio</strong> en acción. ¿Listos para poner a prueba la <strong>estabilidad</strong> del XGO?</p>
                             </div>
                         </div>
                     </div>
@@ -133,7 +146,7 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Equipos, conecten sus robots. Es hora de ejecutar su 'Playlist de Baile'. Carguen el primer código de su plan.</p>
+                                <p class="dialogue assistant">Equipos, conecten sus robots. Es hora de ejecutar su <strong>'Plan de Control Postural'</strong>. Carguen el primer código de su plan y pídanle ayuda a Xolo con este prompt: <strong>"Mi perfil es [escribe aquí tu perfil] y quiero que me ayudes a implementar y hacer debugging de mi código para probar la auto-estabilización del robot XGO. Este es mi código de la sesión pasada: [escribe aquí tu código]."</strong></p>
                             </div>
                         </div>
                     </div>
@@ -142,7 +155,7 @@
 
             <div class="activity-card" id="activity-2">
                 <h2>⚡ Actividad 2: IMPLEMENTACIÓN DEL CÓDIGO (Ejecución) ⏰ 13 minutos</h2>
-                <p><strong>Propósito</strong> Poner en práctica el plan creado en la Sesión A, ejecutando las secuencias de postura en el robot físico y comparando el resultado con lo esperado.</p>
+                <p><strong>Propósito</strong> Poner en práctica el plan creado en la sesión pasada, ejecutando las secuencias de postura en el robot físico y comparando el resultado con lo esperado.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
@@ -152,7 +165,7 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora que están listos, vamos con la primera secuencia de su playlist. El equipo carga el código del "Baile de Inclinación". Antes de darle a 'play', predigan el movimiento: "Ahora debería inclinarse a la derecha...". Luego, ejecuten el programa y observen con atención.</p>
+                                <p class="dialogue assistant">Ahora que están listos, vamos con la primera secuencia de su plan. El equipo carga el código de la <strong>"Secuencia de Inclinación"</strong>. Antes de darle a 'play', predigan el movimiento: "Ahora debería inclinarse a la derecha sin perder el <strong>equilibrio</strong>...". Luego, ejecuten el programa y observen con atención.</p>
                             </div>
                         </div>
                     </div>
@@ -164,7 +177,7 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Perfecto! Ahora, roten al programador y repitan el proceso con la segunda secuencia de su playlist. Recuerden predecir, ejecutar y observar el control del cuerpo del robot. ¿Hace lo que planearon?</p>
+                                <p class="dialogue assistant">¡Perfecto! Ahora, roten al programador y repitan el proceso con la segunda secuencia de su plan, por ejemplo, el <strong>"Desplazamiento Postural"</strong>. Recuerden <strong>predecir, ejecutar y observar</strong> el control del cuerpo del robot. ¿Hace lo que planearon?</p>
                             </div>
                         </div>
                     </div>
@@ -172,7 +185,7 @@
             </div>
 
             <div class="activity-card" id="activity-3">
-                <h2>⚡ Actividad 3: PRUEBAS, OBSERVACIÓN Y DEBUGGING COLABORATIVO ⏰ 15 minutos</h2>
+                <h2>⚡ Actividad 3: PRUEBAS, OBSERVACIÓN Y DEBUGGING FÍSICO ⏰ 15 minutos</h2>
                 <p><strong>Propósito</strong> Enseñar a los estudiantes a depurar considerando los límites físicos del robot y verificar experimentalmente el concepto de auto-estabilización.</p>
                 <div class="steps">
                     <div class="step-card">
@@ -183,7 +196,7 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Muy bien! A veces el código está perfectamente escrito, pero el robot no se comporta como queremos. Esto es porque los robots, como nosotros, tienen límites físicos. Hoy nuestro 'debugging' se centrará en entender y respetar esos límites.</p>
+                                <p class="dialogue assistant">¡Muy bien! A veces el código está perfectamente escrito, pero el robot no se comporta como queremos. Esto es porque los robots, como nosotros, tienen <strong>límites físicos</strong>. Hoy nuestro <strong>'debugging'</strong> se centrará en entender y respetar esos límites para mantener al robot <strong>estable</strong>.</p>
                             </div>
                         </div>
                     </div>
@@ -195,10 +208,10 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant"><strong>Problema:</strong> "El robot se inclina, pero parece que va a caerse."</p>
-                                <p class="dialogue assistant"><strong>Análisis Propio:</strong> "Quizás el ángulo es demasiado grande."</p>
-                                <p class="dialogue assistant"><strong>Consulta a Xolo:</strong> "Xolo, `xgo.roll(30)` hace que el robot casi se caiga. ¿Cuál es el límite seguro?".</p>
-                                <p class="dialogue assistant"><strong>Sugerencia de Xolo:</strong> "¡Buena pregunta! Los límites físicos del robot son importantes. El rango seguro para `roll` y `pitch` suele ser entre -25 y 25 grados. Intenten no pasar de ahí para mantener la estabilidad."</p>
+                                <p class="dialogue assistant"><strong>Problema:</strong> "El robot se inclina, pero parece que va a caerse o se desactiva."</p>
+                                <p class="dialogue assistant"><strong>Análisis Propio:</strong> "Quizás el ángulo de rotación es demasiado grande."</p>
+                                <p class="dialogue assistant"><strong>Consulta a Xolo:</strong> <strong>"Xolo, `body_rotation(['y', 30])` hace que el robot casi se caiga. ¿Cuál es el límite seguro?".</strong></p>
+                                <p class="dialogue assistant"><strong>Sugerencia de Xolo:</strong> "¡Buena pregunta! Los <strong>límites físicos</strong> del robot son importantes. El rango seguro para la rotación del cuerpo suele ser entre -25 y 25 grados. Intenten no pasar de ahí para mantener la <strong>estabilidad</strong>."</p>
                             </div>
                         </div>
                     </div>
@@ -210,10 +223,10 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant"><strong>Problema:</strong> "El movimiento de `body_move` es muy pequeño, casi no se nota."</p>
+                                <p class="dialogue assistant"><strong>Problema:</strong> "El movimiento de `body_height` es muy pequeño, casi no se nota."</p>
                                 <p class="dialogue assistant"><strong>Análisis Propio:</strong> "El número que pusimos es muy bajo."</p>
-                                <p class="dialogue assistant"><strong>Consulta a Xolo:</strong> "Xolo, ¿cómo hacemos que la 'sentadilla' sea más profunda?".</p>
-                                <p class="dialogue assistant"><strong>Sugerencia de Xolo:</strong> "Aumenten el valor en `body_move('z', -20)`. Prueben con -30 o -35, pero ¡cuidado! Si bajan demasiado, las patas podrían chocar. Siempre deben considerar la mecánica del robot."</p>
+                                <p class="dialogue assistant"><strong>Consulta a Xolo:</strong> <strong>"Xolo, ¿cómo hacemos que la 'sentadilla' sea más profunda?".</strong></p>
+                                <p class="dialogue assistant"><strong>Sugerencia de Xolo:</strong> "Aumenten el valor en <strong>`body_height(-20)`</strong>. Prueben con -30 o -35, pero ¡cuidado! Si bajan demasiado, las patas podrían chocar entre sí. Siempre deben considerar la <strong>mecánica</strong> y los <strong>límites físicos</strong> del robot."</p>
                             </div>
                         </div>
                     </div>
@@ -225,7 +238,7 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, el gran desafío de su playlist. Ejecuten un programa simple que solo contenga `xgo.stand()`. Luego, con mucho cuidado, levanten y inclinen suavemente la tabla o superficie donde está parado el robot. Observen con atención: vean cómo las patas del robot se mueven activamente para compensar la inclinación y mantener el cuerpo nivelado. ¡Están viendo la 'caja negra' en acción!</p>
+                                <p class="dialogue assistant">Ahora, el gran desafío de su plan. Ejecuten un programa simple que solo contenga <strong>`xgo.stand()`</strong>. Luego, con mucho cuidado, levanten y inclinen suavemente la tabla o superficie donde está parado el robot. Observen con atención: vean cómo las patas del robot se mueven activamente para compensar la inclinación y mantener el cuerpo nivelado. ¡Están viendo la <strong>'caja negra'</strong> de la <strong>auto-estabilización</strong> en acción!</p>
                             </div>
                         </div>
                     </div>
@@ -244,7 +257,7 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Tiempo de Gnius STORM! Cada equipo, prepárese para mostrar su "baile" más impresionante. Luego, un equipo voluntario demostrará el experimento de auto-estabilización y nos explicará a todos lo que observó. La pregunta para el equipo es: ¿Qué hacían las patas del robot cuando inclinaron la base?</p>
+                                <p class="dialogue assistant">¡Tiempo de <strong>Gnius STORM</strong>! Cada equipo, prepárese para mostrar su secuencia de control postural más impresionante. Luego, un equipo voluntario demostrará el experimento de <strong>auto-estabilización</strong> y nos explicará a todos lo que observó. La pregunta para el equipo es: ¿Qué hacían las patas del robot cuando inclinaron la base para mantener el <strong>equilibrio</strong>?</p>
                             </div>
                         </div>
                     </div>
@@ -256,7 +269,7 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Vieron la magia de la IMU! El robot se mantiene estable gracias a esa 'caja negra'. Ahora que dominan el cuerpo, ¿qué sigue? ¡Usar su brazo! Miren su playlist, ¿qué idea de combinación o nuevo baile quieren probar en el tiempo que queda? Recuerden alternar quién programa para que todos en el equipo tengan la oportunidad.</p>
+                                <p class="dialogue assistant">¡Vieron la magia de la <strong>IMU</strong> y los <strong>bucles de control</strong>! El robot se mantiene estable gracias a esa 'caja negra'. Ahora que dominan el cuerpo, ¿qué sigue? ¡Usar su brazo! Miren su plan, ¿qué idea de combinación o nuevo movimiento quieren probar en el tiempo que queda? Recuerden alternar quién programa para que todos en el equipo tengan la oportunidad.</p>
                             </div>
                         </div>
                     </div>
