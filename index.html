@@ -64,14 +64,10 @@
                                 <td>
                                     <strong>Objetivos de Aprendizaje</strong>
                                     <ul>
-                                        <li>Al final de la sesión, los estudiantes podrán:
-                                            <ul>
-                                                <li>Programar posturas y movimientos que desafíen el equilibrio.</li>
-                                                <li>Realizar pruebas para observar cómo el robot reacciona.</li>
-                                                <li>Aprender a depurar comandos para asegurar la estabilidad.</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Objetivo General de la Sesión:</strong> Que los estudiantes implementen y prueben comandos de postura avanzada.</li>
+                                        <li>Implementación: Programar diversas posturas y movimientos de equilibrio.</li>
+                                        <li>Pruebas: Colocar al robot en diferentes inclinaciones y observar la reacción.</li>
+                                        <li>Debugging: Corrige fallos en comandos para mantener la estabilidad, prueba la auto-estabilización.</li>
+                                        <li>Objetivo general de la sesión: (objetivo general ajustado al contexto de la sesión completa)</li>
                                     </ul>
                                      <h4>Vocabulario Clave:</h4>
                                     <ul>
@@ -81,10 +77,10 @@
                                     </ul>
                                     <strong>Secuencia de Clase</strong>
                                     <ul>
-                                        <li>⚡Bienvenida y Conexión</li>
-                                        <li>⚡IMPLEMENTACIÓN DEL CÓDIGO (Ejecución)</li>
-                                        <li>⚡PRUEBAS, OBSERVACIÓN Y DEBUGGING FÍSICO</li>
-                                        <li>⚡GNIUS STORM Y REINICIO DEL CICLO</li>
+                                        <li><strong>Actividad 1:</strong> Bienvenida y Conexión</li>
+                                        <li><strong>Actividad 2:</strong> A.I. GYM (Implementación y Debugging)</li>
+                                        <li><strong>Actividad 3:</strong> PRUEBAS, OBSERVACIÓN Y DEBUGGING FÍSICO</li>
+                                        <li><strong>Actividad 4:</strong> GNIUS STORM Y ANÁLISIS DE RESULTADOS</li>
                                     </ul>
                                     <strong>Entregable Clave</strong>
                                     <ul>
@@ -100,7 +96,7 @@
                                         <li>Robots XGO V2 (1 por cada 4 estudiantes), cargados y listos para conectar.</li>
                                         <li>Los "Planes de Control Postural" creados por cada equipo en la sesión pasada.</li>
                                         <li>Tabla o superficie plana y rígida para la prueba de estabilización.</li>
-                                        <li>Presentación de diapositivas.</li>
+                                        <li>Presentación de diapositivas (10 diapositivas).</li>
                                         <li>Chat de Agente Gnius (Xolo) activo para consultas de debugging.</li>
                                     </ul>
                                     <strong>Preparación Previa para ESTA Sesión</strong>
@@ -154,7 +150,7 @@
             </div>
 
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: IMPLEMENTACIÓN DEL CÓDIGO (Ejecución) ⏰ 13 minutos</h2>
+                <h2>⚡ Actividad 2: A.I. GYM (Implementación y Debugging) ⏰ 13 minutos</h2>
                 <p><strong>Propósito</strong> Poner en práctica el plan creado en la sesión pasada, ejecutando las secuencias de postura en el robot físico y comparando el resultado con lo esperado.</p>
                 <div class="steps">
                     <div class="step-card">
@@ -209,7 +205,7 @@
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
                                 <p class="dialogue assistant"><strong>Problema:</strong> "El robot se inclina, pero parece que va a caerse o se desactiva."</p>
-                                <p class="dialogue assistant"><strong>Análisis Propio:</strong> "Quizás el ángulo de rotación es demasiado grande."</p>
+                                <p class="dialogue assistant"><strong>Análisis Propio:</strong> "Quizás el <strong>ángulo de rotación</strong> es demasiado grande."</p>
                                 <p class="dialogue assistant"><strong>Consulta a Xolo:</strong> <strong>"Xolo, `body_rotation(['y', 30])` hace que el robot casi se caiga. ¿Cuál es el límite seguro?".</strong></p>
                                 <p class="dialogue assistant"><strong>Sugerencia de Xolo:</strong> "¡Buena pregunta! Los <strong>límites físicos</strong> del robot son importantes. El rango seguro para la rotación del cuerpo suele ser entre -25 y 25 grados. Intenten no pasar de ahí para mantener la <strong>estabilidad</strong>."</p>
                             </div>
@@ -246,7 +242,7 @@
             </div>
 
             <div class="activity-card" id="activity-4">
-                <h2>⚡ Actividad 4: GNIUS STORM Y REINICIO DEL CICLO ⏰ 10 minutos</h2>
+                <h2>⚡ Actividad 4: GNIUS STORM Y ANÁLISIS DE RESULTADOS ⏰ 10 minutos</h2>
                 <p><strong>Propósito</strong> Celebrar los logros, compartir la observación del experimento de estabilización y fomentar la mejora continua.</p>
                 <div class="steps">
                     <div class="step-card">
@@ -269,7 +265,7 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Vieron la magia de la <strong>IMU</strong> y los <strong>bucles de control</strong>! El robot se mantiene estable gracias a esa 'caja negra'. Ahora que dominan el cuerpo, ¿qué sigue? ¡Usar su brazo! Miren su plan, ¿qué idea de combinación o nuevo movimiento quieren probar en el tiempo que queda? Recuerden alternar quién programa para que todos en el equipo tengan la oportunidad.</p>
+                                <p class="dialogue assistant">¡Vieron la magia de la <strong>IMU</strong> y los <strong>bucles de control</strong>! El robot se mantiene estable gracias a esa 'caja negra'. Ahora que dominan el cuerpo, ¿qué sigue? ¡Usar su <strong>brazo</strong>! Miren su plan, ¿qué idea de combinación o nuevo movimiento quieren probar en el tiempo que queda? Recuerden alternar quién programa para que todos en el equipo tengan la oportunidad.</p>
                             </div>
                         </div>
                     </div>
